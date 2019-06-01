@@ -15,11 +15,12 @@ var connection = require('./connection');
 // CREATE UPDATEONE METHOD
 
 var orm = {
-    selectAll: function (whatToSelect, tableInput) {
+    selectAll: function (cb) {
         var queryString = "SELECT * FROM burgers";
-        connection.query(queryString, function (err, result) {
+        connection.query(queryString, function(err, result) {
             if (err) throw err;
-            console.log(result);
+            // console.log(result);
+            cb(result);
         });
     },
     insertOne: function (burgerName) {
