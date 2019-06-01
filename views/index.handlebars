@@ -13,10 +13,14 @@
 <h2>Burgers that have been devoured!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
+  {{#each burgers}}
+    {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/if}}
+  {{/each}}
+</ul>
+<ul>
+  {{#each burgers}}
   {{/each}}
 </ul>
 
