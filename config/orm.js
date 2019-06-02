@@ -19,17 +19,12 @@ var orm = {
         var queryString = "SELECT * FROM burgers";
         connection.query(queryString, function(err, result) {
             if (err) throw err;
-            // console.log(result);
             cb(result);
         });
     },
-    insertOne: function (burgerName) {
-
-        connection.query("INSERT INTO burgers SET ?",
-            {
-                burger_name: burgerName,
-                devoured: FALSE
-            },
+    insertOne: function (cols, vals) {
+        connection.query(`INSERT INTO burgers (${cols.join(',')}) VALUES (?, ?)`,
+            vals,
             function (err, result) {
                 if (err) throw err;
                 console.log(result);

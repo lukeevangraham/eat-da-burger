@@ -1,9 +1,12 @@
 <li>
 	{{burger_name}}
 
+{{#if devoured}}
 	<button class="change-devoured" data-id="{{id}}" data-newdevour="{{devour}}">
-		{{#if devoured}}Devour it!{{else}}WAKE UP!{{/if}}
+
+		Devour it!
 	</button>
+    {{/if}}
 
 
 </li>
