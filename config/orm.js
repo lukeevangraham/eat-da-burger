@@ -18,7 +18,6 @@ function printQuestionMarks(num) {
 
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
-    console.log("ob is" + ob);
 
     var arr = [];
 
@@ -62,16 +61,36 @@ var orm = {
             cb(result);
         });
     },
-    insertOne: function (cols, vals) {
-        connection.query(`INSERT INTO burgers (${cols.join(',')}) VALUES (?, ?)`,
-            vals,
-            function (err, result) {
-                if (err) throw err;
-                console.log(result);
-            });
+    // insertOne: function (cols, vals) {
+    //     console.log("cols is: ", cols);
+    //     connection.query(`INSERT INTO burgers (${cols.join(',')}) VALUES (?, ?)`,
+    //         vals,
+    //         function (err, result) {
+    //             if (err) throw err;
+    //             console.log(result);
+    //         });
+    // },
+    insertOne: function (table, cols, vals, cb) {
+        var queryString = "INSERT INTO " + table;
+
+        queryString += " (";
+        queryString += cols.toString();
+        queryString += ") ";
+        queryString += "VALUES (";
+        queryString += printQuestionMarks(vals.length);
+        queryString += ") ";
+
+        console.log(queryString);
+
+        connection.query(queryString, vals, function (err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(result);
+        });
     },
     updateOne: function (table, objColVals, condition, cb) {
-        // console.log(objColVals);
         var queryString = "UPDATE " + table;
 
         queryString += " SET ";
