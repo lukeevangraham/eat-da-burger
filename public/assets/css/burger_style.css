@@ -37,3 +37,8 @@ li {
   form {
       text-align: center
   }
+
+  .addContainer {
+      background-color: #FFD8B5;
+      border-radius: 7px;
+  }
