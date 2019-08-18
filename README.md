@@ -1,3 +1,5 @@
+# Check-out the app at: https://lgraham-eat-da-burger.herokuapp.com/
+
 ### Overview
 
 A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Uses Node and MySQL to query and route data in your app, and Handlebars to generate HTML.
