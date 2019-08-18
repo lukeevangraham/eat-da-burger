@@ -1,6 +1,6 @@
 # Eat-Da-Burger
 
-### Overview
+## Overview
 
 Deployed at: https://lgraham-eat-da-burger.herokuapp.com/
 
