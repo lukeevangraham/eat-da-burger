@@ -1,4 +1,4 @@
-# Check-out the app at: https://lgraham-eat-da-burger.herokuapp.com/
+### Check-out the app at: https://lgraham-eat-da-burger.herokuapp.com/
 
 ### Overview
 
