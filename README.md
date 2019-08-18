@@ -1,3 +1,5 @@
+# Eat-Da-Burger
+
 ### Check-out the app at: https://lgraham-eat-da-burger.herokuapp.com/
 
 ### Overview
