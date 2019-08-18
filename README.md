@@ -1,8 +1,8 @@
 # Eat-Da-Burger
 
-### Check-out the app at: https://lgraham-eat-da-burger.herokuapp.com/
-
 ### Overview
+
+Check-out the app at: https://lgraham-eat-da-burger.herokuapp.com/
 
 * Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
