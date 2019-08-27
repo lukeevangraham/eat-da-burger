@@ -4,7 +4,7 @@
 
 Deployed at: https://lgraham-eat-da-burger.herokuapp.com/
 
-Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+It's important for businesses to receive feedback.  Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
 In this app, I created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). I uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
 
